@@ -68,8 +68,8 @@ const Progress = (props: IProgressProps, ref?: any) => {
     value < max && value > min
       ? ((value - min) / (max - min)) * 100
       : value > min
-      ? 100
-      : 0;
+        ? 100
+        : 0;
 
   return (
     <Box
@@ -83,7 +83,7 @@ const Progress = (props: IProgressProps, ref?: any) => {
         now: valueWidth,
       }}
     >
-      <Box w={`${valueWidth}%`} {..._filledTrack}>
+      <Box w={`${valueWidth}%`} style={{ borderRadius: 5, alignContent: 'flex-end', alignItems: 'flex-end' }} {..._filledTrack}>
         {children}
       </Box>
     </Box>

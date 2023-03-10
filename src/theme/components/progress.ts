@@ -14,7 +14,7 @@ function baseStyle(props: Record<string, any>) {
   return {
     overflow: 'hidden',
     _filledTrack: {
-      bg: `${c}.600`,
+      bg: c,
       shadow: 0,
       height: '100%',
       display: 'flex',
